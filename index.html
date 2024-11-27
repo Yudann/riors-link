@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RIORS Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    @layer utilities {
+      .button-custom {
+        position: relative;
+        border: 2px solid black;
+        background: #000;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding: 10px 20px;
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+        clip-path: polygon(10px 0, calc(100% - 10px) 0, 100% 50%, calc(100% - 10px) 100%, 10px 100%, 0 50%);
+        transition: background 0.3s ease, transform 0.2s ease;
+      }
+      .button-custom:hover {
+        background: #444;
+        transform: scale(1.05);
+      }
+      .button-custom::before,
+      .button-custom::after {
+        content: '';
+        position: absolute;
+        border: 2px solid #fff;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
+        height: 16px;
+      }
+      .button-custom::before {
+        left: -22px;
+        border-right: none;
+        border-radius: 4px 0 0 4px;
+      }
+      .button-custom::after {
+        right: -22px;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#f5f5f5] text-gray-900">
+  <div class="max-w-xl mx-auto px-4 py-8 text-center">
+    <!-- Logo -->
+    <div class="mb-4">
+      <img src="assets/Logo RiIORS.png" alt="Riors Logo" class="mx-auto w-32">
+    </div>
+
+    <!-- Tagline -->
+    <p class="text-sm italic text-gray-600 mb-8">
+      "Inspiring everyone to trigger positive movements and make sport a continuous lifestyle for a better life"
+    </p>
+
+    <!-- Social Media Icons -->
+    <div class="flex justify-center space-x-7 mb-8 text-2xl">
+      <a href="#" class="text-black fill-black hover:text-gray-500">
+        <img width="35" height="35" src="https://img.icons8.com/windows/32/instagram-new.png" alt="instagram-new"/>
+      </a>
+      <a href="#" class="text-black fill-black hover:text-gray-500">
+        <img width="35" height="35" src="https://img.icons8.com/color/30/tiktok--v1.png" alt="tiktok--v1"/>
+      </a>
+      <a href="#" class="text-black fill-black hover:text-gray-500">
+        <img width="35" height="35" src="https://img.icons8.com/ios-glyphs/30/twitterx--v2.png" alt="twitterx--v2"/>
+      </a>
+      <a href="#" class="text-black fill-black hover:text-gray-500">
+        <img width="35" height="35" src="https://img.icons8.com/pulsar-line/48/threads.png" alt="threads"/>
+      </a>
+      <a href="#" class="text-black fill-black hover:text-gray-500">
+        <img width="35" height="35" src="https://img.icons8.com/ios-filled/50/youtube-play.png" alt="youtube-play"/>
+      </a>
+      <a href="#" class="text-black fill-black hover:text-gray-500">
+        <img width="35" height="35" src="https://img.icons8.com/fluency-systems-regular/50/speech-bubble-with-dots--v1.png" alt="speech-bubble-with-dots--v1"/>
+      </a>
+    </div>
+
+    <!-- Banner -->
+    <div class="mb-8">
+      <img src="assets/banner.png" alt="Riors Banner" class="w-full rounded-lg">
+    </div>
+
+    <!-- Buttons -->
+    <div class="space-y-4">
+      <a href="#" class="button-custom text-white">JOIN RIORS COMMUNITY</a>
+      <a href="#" class="button-custom text-black bg-white border-y-2">E-CATALOGUE</a>
+      <a href="#" class="button-custom text-black bg-white border-y-2">RIORSLAB</a>
+
+      <hr class="border-gray-300 my-4">
+
+      <a href="#" class="button-custom text-black bg-[#EC1E2D] border-y-2 ">
+        OFFICIAL WEBSITE
+      </a>
+
+      <a href="#" class="button-custom text-black bg-white border-y-2">WHATSAPP BUSINESS</a>
+      <a href="#" class="button-custom text-black bg-white border-y-2">SHOPEE</a>
+      <a href="#" class="button-custom text-black bg-white border-y-2">TOKOPEDIA</a>
+      <a href="#" class="button-custom text-black bg-white border-y-2">TIKTOK SHOP</a>
+      <a href="#" class="button-custom text-black bg-white border-y-2">OFFLINE STORE</a>
+    </div>
+  </div>
+</body>
+</html>
